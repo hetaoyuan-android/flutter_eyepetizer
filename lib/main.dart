@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:leo_eyepetizer/app_init.dart';
 import 'package:leo_eyepetizer/http/http_manager.dart';
+import 'package:leo_eyepetizer/page/video/video_detail_page.dart';
 import 'package:leo_eyepetizer/tab_navigation.dart';
 
 void main() {
@@ -70,6 +71,7 @@ class _GetMaterialAppWidgetState extends State<GetMaterialAppWidget> {
       initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: () => widget.child),
+        GetPage(name: '/detail', page: () => VideoDetailPage()),
       ],
     );
   }
