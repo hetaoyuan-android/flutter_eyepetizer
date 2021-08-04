@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:leo_eyepetizer/config/string.dart';
+import 'package:leo_eyepetizer/page/discovery/discovery_page.dart';
 import 'package:leo_eyepetizer/page/home/home_page.dart';
 import 'package:leo_eyepetizer/utils/toast_util.dart';
 import 'package:leo_eyepetizer/viewmodel/tab_navigation_viewmodel.dart';
@@ -32,7 +33,7 @@ class _TabNavigationState extends State<TabNavigation> {
           children: [
             // Container(color: Colors.blue),
             HomePage(),
-            Container(color: Colors.brown),
+            DiscoveryPage(),
             Container(color: Colors.amber),
             Container(color: Colors.red),
           ],
