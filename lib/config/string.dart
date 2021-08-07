@@ -24,4 +24,9 @@ class LeoString {
 
   // mine
   static const String watch_history = '观看记录';
+
+  // search
+  static const String hot_key_word = '- 热搜关键字 -';
+  static const String no_data = '暂无数据';
+  static const String interest_video = '帮你找到感兴趣的视频';
 }

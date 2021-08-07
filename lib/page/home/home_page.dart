@@ -1,7 +1,10 @@
+import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:leo_eyepetizer/config/string.dart';
 import 'package:leo_eyepetizer/page/home/home_body_page.dart';
 import 'package:leo_eyepetizer/widget/app_bar.dart';
+
+import 'search_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -20,8 +23,31 @@ class _HomePageState extends State<HomePage>
       appBar: appBar(
         LeoString.home,
         showBack: false,
+        actions: <Widget>[
+          // 搜索图标
+          _searchIcon(),
+        ],
       ),
       body: HomeBodyPage(),
+    );
+  }
+
+  /// 搜索图标
+  Widget _searchIcon() {
+    return Padding(
+      padding: EdgeInsets.only(right: 15),
+      child: OpenContainer(
+        closedElevation: 0.0,
+        closedBuilder: (context, action) {
+          return Icon(
+            Icons.search,
+            color: Colors.black87,
+          );
+        },
+        openBuilder: (context, action) {
+          return SearchPage();
+        },
+      ),
     );
   }
 

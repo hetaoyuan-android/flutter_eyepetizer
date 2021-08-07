@@ -4,6 +4,7 @@ import 'package:leo_eyepetizer/config/string.dart';
 import 'package:leo_eyepetizer/model/common_item.dart';
 import 'package:leo_eyepetizer/utils/cache_image.dart';
 import 'package:leo_eyepetizer/utils/date_util.dart';
+import 'package:leo_eyepetizer/utils/history_repository.dart';
 import 'package:leo_eyepetizer/utils/navigator_util.dart';
 import 'package:leo_eyepetizer/viewmodel/video/video_detail_viewmodel.dart';
 import 'package:leo_eyepetizer/widget/loading_state_widget.dart';
@@ -37,6 +38,7 @@ class _VideoDetailPageState extends State<VideoDetailPage>
     data = widget.videoDta == null ? arguments() : widget.videoDta;
     //监听页面可见与不可见状态
     WidgetsBinding.instance.addObserver(this);
+    HistoryRepository.saveWatchHistory(data);
   }
 
   @override
