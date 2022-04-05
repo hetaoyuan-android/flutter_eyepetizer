@@ -29,11 +29,12 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:icon="@mipmap/ic_launcher"
-        android:label="leo_eyepetizer"
+        android:icon="@mipmap/icon"
+        android:label="开眼flutter"
+        android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config">
         <activity
-            android:name=".MainActivity"
+            android:name="com.enjoy.yuan.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"

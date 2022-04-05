@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:leo_eyepetizer/config/string.dart';
 import 'package:leo_eyepetizer/page/discovery/discovery_page.dart';
 import 'package:leo_eyepetizer/page/home/home_page.dart';
+import 'package:leo_eyepetizer/page/hot/hot_page.dart';
+import 'package:leo_eyepetizer/page/mine/MinePage.dart';
 import 'package:leo_eyepetizer/utils/toast_util.dart';
 import 'package:leo_eyepetizer/viewmodel/tab_navigation_viewmodel.dart';
 import 'package:leo_eyepetizer/widget/provider_widget.dart';
@@ -34,8 +36,8 @@ class _TabNavigationState extends State<TabNavigation> {
             // Container(color: Colors.blue),
             HomePage(),
             DiscoveryPage(),
-            Container(color: Colors.amber),
-            Container(color: Colors.red),
+            HotPage(),
+            MinePage()
           ],
         ),
         bottomNavigationBar: ProviderWidget<TabNavigationViewModel>(

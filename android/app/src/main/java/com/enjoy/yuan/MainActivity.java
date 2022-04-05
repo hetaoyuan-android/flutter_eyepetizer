@@ -1,4 +1,4 @@
-package com.enjoy.leo_eyepetizer;
+package com.enjoy.yuan;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -65,14 +65,14 @@ public class MainActivity extends FlutterActivity {
     private void showWaringDialog() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             new AlertDialog.Builder(this, android.R.style.Theme_Material_Light_Dialog_Alert)
-                    .setTitle(R.string.waring)
-                    .setMessage(R.string.permission_waring)
-                    .setPositiveButton(R.string.sure, new DialogInterface.OnClickListener() {
+                    .setTitle("警告！")
+                    .setMessage("请前往设置->应用->开眼->权限中打开相关权限，否则功能无法正常运行！")
+                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             go2AppSettings();
                         }
-                    }).setNegativeButton(R.string.cancel, null).show();
+                    }).setNegativeButton("取消", null).show();
         }
     }
 

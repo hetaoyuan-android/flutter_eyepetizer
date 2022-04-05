@@ -124,7 +124,7 @@ class _MinePageState extends State<MinePage>
         Padding(
           padding: EdgeInsets.only(top: 20),
           child: Text(
-            '享学',
+            'flutter',
             style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
           ),
