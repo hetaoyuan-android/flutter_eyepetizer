@@ -1,6 +1,6 @@
 # 简介
 
-本项目是flutter练手的项目，大部分都是基础组件的widget，数据来源于开眼 http://baobab.kaiyanapp.com/api/
+本项目是flutter练手的项目，大部分都是基础组件的widget，数据来源于开眼
 
 项目包含四个模块 首页，发现，热门，我的，   
 展示了网络请求，缓存处理，  
